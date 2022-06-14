@@ -1,10 +1,12 @@
 import { Path } from './path.js';
-import { Car } from './car.js';
+import { Player } from './player.js';
+import { EnemyPlayer } from './enemy.js';
 
 class carGame {
 	constructor() {
 		this.path = new Path();
-		this.car = new Car();
+		this.car = new Player();
+		this.enemy = new EnemyPlayer();
 	}
 }
 

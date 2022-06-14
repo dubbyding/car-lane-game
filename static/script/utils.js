@@ -1,10 +1,10 @@
 /**
  * It returns a random number between the max and min values.
- * @param max - The maximum number you want to generate.
  * @param min - The minimum number that the random number can be.
+ * @param max - The maximum number you want to generate.
  * @returns A random number between the max and min values.
  */
-let randomNumber = (max, min) => {
+let randomNumber = (min, max) => {
 	return Math.floor(Math.random() * max) + min;
 };
 
