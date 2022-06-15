@@ -1,6 +1,9 @@
 import { CAR_DETAILS } from './const.js';
 import { midValue } from './utils.js';
 
+/**
+ *  The class creates a new car and returns the position of the car.
+ */
 class Car {
 	/**
 	 * This function gets the car moving positions and displays the player car.

@@ -12,6 +12,8 @@ class Player extends Car {
 	constructor() {
 		super();
 
+		this.id = PLAYER_DETAILS.PLAYER_ID;
+
 		this.displayPlayerCar();
 		this.playerCarMove();
 	}
@@ -24,7 +26,7 @@ class Player extends Car {
 		let rotation = PLAYER_DETAILS.PLAYER_ROTATE;
 
 		this.newCar(
-			PLAYER_DETAILS.PLAYER_ID,
+			this.id,
 			playerImageLocation,
 			rotation,
 			this.positionCars[Math.floor(this.positionCars.length / 2)],
@@ -37,7 +39,7 @@ class Player extends Car {
     the movePlayerCar function. 
     */
 	playerCarMove = () => {
-		this.playerElement = document.getElementById(PLAYER_DETAILS.PLAYER_ID);
+		this.playerElement = document.getElementById(this.id);
 
 		document.addEventListener('keypress', (ev) => {
 			let pressedKey = ev.key.toLowerCase();
